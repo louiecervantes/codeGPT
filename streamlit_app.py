@@ -30,7 +30,7 @@ def app():
     
     st.title("CodeGPT will generate program codes from natural language instructions")
     st.write("One on the most useful uses of generative AI is to generate programming codes in several languages.  A very useful tool that would speed up and enhance the output of software developers.")
-    st.write("Copy paste one of the following task into the input box.  You can also come up with you own set of instructions.")
+    st.write("Copy and paste one of the following task into the input box.  You can also come up with your own set of instructions.")
     st.write("Write a program that calculates the average of a list of numbers.")
     st.write("Create a function that reverses a string.")
     st.write("Write a program that takes in two numbers and outputs their sum.")
