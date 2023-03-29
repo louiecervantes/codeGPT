@@ -57,7 +57,7 @@ def app():
     
              
     # Display the text when the user submits the form
-    if st.button('Submit')::
+    if st.button('Submit'):
         output = generate_code("Generate program codes in the language " + language + " to perform the task " + user_input)
         st.write(output)
 
