@@ -28,7 +28,7 @@ def app():
     st.header("Welcome to CodeGPT")
     st.subheader("Louie F. Cervantes M. Eng. \n(c) 2023 WVSU College of ICT")
     
-    st.title("CodeGPT will generate program codes")
+    st.title("CodeGPT will generate program codes from natural language instructions")
     st.write("One on the most useful uses of generative AI is to generate programming codes in several languages.  A very useful tool that would speed up and enhance the output of software developers.")
     st.write("Copy paste one of the following task into the input box.  You can also come up with you own set of instructions.")
     st.write("Write a program that calculates the average of a list of numbers.")
