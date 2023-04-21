@@ -11,7 +11,7 @@ import os
 
 def generate_code(input_string): 
     response = openai.Completion.create(
-        engine="text-davinci-003", 
+        engine="gpt-3.5-turbo", 
         prompt= input_string +"\n",
         max_tokens=1024,
         top_p=1.0,
