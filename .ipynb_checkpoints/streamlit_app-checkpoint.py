@@ -11,7 +11,7 @@ import os
 
 def generate_code(input_string): 
     response = openai.Completion.create(
-        engine="gpt-3.5-turbo", 
+        engine="text-davinci-003", 
         prompt= input_string +"\n",
         max_tokens=1024,
         top_p=1.0,
@@ -28,9 +28,9 @@ def app():
     st.header("Welcome to CodeGPT")
     st.subheader("Louie F. Cervantes M. Eng. \n(c) 2023 WVSU College of ICT")
     
-    st.title("CodeGPT will generate program codes")
+    st.title("CodeGPT will generate program codes from natural language instructions")
     st.write("One on the most useful uses of generative AI is to generate programming codes in several languages.  A very useful tool that would speed up and enhance the output of software developers.")
-    st.write("Copy paste one of the following task into the input box.  You can also come up with you own set of instructions."
+    st.write("Copy and paste one of the following task into the input box.  You can also come up with your own set of instructions.")
     st.write("Write a program that calculates the average of a list of numbers.")
     st.write("Create a function that reverses a string.")
     st.write("Write a program that takes in two numbers and outputs their sum.")
@@ -57,7 +57,7 @@ def app():
     
              
     # Display the text when the user submits the form
-    if st.button('Submit')::
+    if st.button('Submit'):
         output = generate_code("Generate program codes in the language " + language + " to perform the task " + user_input)
         st.write(output)
 
